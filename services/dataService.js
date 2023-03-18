@@ -67,7 +67,7 @@ const update=(_id,name,age,salary,post,date)=>{
                 return{
                     status:false,
                     statusCode:401,
-                    message:"Incorrect user credentials"
+                    message:"Incorrect credentials"
         
                 }
             }        
@@ -83,14 +83,14 @@ const update=(_id,name,age,salary,post,date)=>{
           return{
             status:true,
             statusCode:200,
-            message:"APi deleted"
+            message:"Deleted successfully"
           }
         }
         else{
           return{
             status:false,
             statusCode:401,
-            message:"Api not found"
+            message:"Data not found"
           }
         }
       }
@@ -106,7 +106,7 @@ const update=(_id,name,age,salary,post,date)=>{
           return{
             status:false,
             statusCode:401,
-            message:"Api already exists"
+            message:"API data already exists"
           }
         }
         else{
@@ -121,7 +121,7 @@ const update=(_id,name,age,salary,post,date)=>{
           return{
             status:true,
             statusCode:200,
-            message:"Registered successfully"       
+            message:"Created successfully"       
           }
         }
       }
